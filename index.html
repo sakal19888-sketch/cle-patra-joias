@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleópatra Joias</title>
+<style>
+body {margin:0;font-family:Arial;background:#000;color:#d4af37;}
+header {padding:20px;text-align:center;border-bottom:1px solid #d4af37;}
+h1 {margin:0;letter-spacing:2px;}
+.banner {text-align:center;padding:40px;}
+.banner img {max-width:300px;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:20px;}
+.card {background:#111;padding:15px;border:1px solid #d4af37;border-radius:10px;text-align:center;}
+.card img {width:100%;border-radius:10px;}
+button {background:#d4af37;border:none;padding:10px 20px;margin-top:10px;cursor:pointer;font-weight:bold;}
+footer {text-align:center;padding:20px;border-top:1px solid #d4af37;}
+</style>
+</head>
+<body><header>
+<h1>CLEÓPATRA JOIAS</h1>
+<p>Luxo que atravessa eras</p>
+</header><section class="banner">
+<img src="logo.png" alt="Logo Cleópatra">
+</section><section class="grid"><div class="card">
+<img src="produto1.jpg">
+<h3>Pulseira Rubi Real</h3>
+<p>R$ 2.990</p>
+<button onclick="comprar('Pulseira Rubi Real')">Comprar</button>
+</div><div class="card">
+<img src="produto2.jpg">
+<h3>Bracelete Safira Imperial</h3>
+<p>R$ 3.490</p>
+<button onclick="comprar('Bracelete Safira Imperial')">Comprar</button>
+</div><div class="card">
+<img src="produto3.jpg">
+<h3>Anel Pirâmide Diamante</h3>
+<p>R$ 1.890</p>
+<button onclick="comprar('Anel Pirâmide Diamante')">Comprar</button>
+</div><div class="card">
+<img src="produto4.jpg">
+<h3>Brincos Esmeralda Egípcia</h3>
+<p>R$ 1.290</p>
+<button onclick="comprar('Brincos Esmeralda Egípcia')">Comprar</button>
+</div></section><footer>
+<p>© 2026 Cleópatra Joias - Todos os direitos reservados</p>
+</footer><script>
+function comprar(produto){
+let numero = '5511999999999';
+let mensagem = Olá, quero comprar: ${produto};
+window.open(https://wa.me/${numero}?text=${encodeURIComponent(mensagem)});
+}
+</script></body>
+</html>
